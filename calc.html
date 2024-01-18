@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> DelEx </title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
+    
+    <script>function select() {
+    if (document.getElementById("document").checked) {
+        document.getElementById("gruzSelected").classList.add("lk-hidden");
+        document.getElementById("docsSelected").classList.remove("lk-hidden");
+    } else if (document.getElementById("package").checked) {
+        document.getElementById("gruzSelected").classList.remove("lk-hidden");
+        document.getElementById("docsSelected").classList.add("lk-hidden");
+    }
+}
+document.getElementById("document").onclick = select;
+document.getElementById("package").onclick = select;
+
+</script>
+    
+    <link rel="stylesheet" href="style.3f9989af.css">
+    <link rel="stylesheet" href="lk.e780e130.css">
+
+</head>
+<body>
+    <header class="header">
+    <nav class="nav-header">
+        <div class="nav-left">
+            <img class="logo" src="images/Logo%20(1).f5a33835.png" alt="">
+        </div>
+        <div class="nav-center">
+            <a href="" class="underdashed-blue-always underlined-blue">
+                <img src="images/005-placeholder%20(1).792f1d83.png" alt="" style="width: 1rem; height: 1rem">
+                Пермь
+            </a>
+            <pre>            </pre>
+            <a href="services.html" class="underlined-blue">
+                Услуги
+            </a>
+            <a href="" class="underlined-blue">
+                Наши решения
+            </a>
+            <a href="about.html" class="underlined-blue">
+                О компании
+            </a>
+            <a href="" class="underlined-blue">
+                Стать партнером
+            </a>
+        </div>
+        <div class="nav-right">
+            <a href="" class="underlined-blue">
+                +7(342)258-36-30
+            </a>
+            <pre>        </pre>
+            <a href="lk_index.html" class="underlined-blue">
+                <img src="images/Frame%20(1).932e2abf.png" alt="" style="width: 1rem; height: 1rem">
+                Войти
+            </a>
+        </div>
+    </nav>
+</header>
+    <div class="lk-fullpage lk-background lk-flex">
+        <h1 class="lk-page-heade" style="text-align: center; font-weight: 400">Расчитайте стоимость доставки</h1>
+                        <div class="d-flex home-head-form">
+                            <input class="col-4 p-default round-left" type="text" placeholder="Флажок тут будет позже...">
+                            <input class="col-4 p-default" type="text" placeholder="и здесь тоже...">
+                            <input class="col-3 p-default round-right right-field" type="text" placeholder="Вес, кг">
+                            <button class="col-3 p-default" style="background-color: var(--color-accent)">
+                                Рассчитать
+                            </button>
+                        </div>
+        <div class="lk-container lk-input-list lk-flex-center lk-container-mini">
+            <fieldset>
+                <div class="lk-input lk-input-check">
+                    <input type="radio" id="document" name="type" value="document" checked="">
+                    <label for="document">Документы</label>
+                </div>
+                <div class="lk-input lk-input-check">
+                    <input type="radio" id="package" name="type" value="package">
+                    <label for="package">Груз</label>
+                </div>
+            </fieldset>
+            <div class="lk-input">
+    <label for="size">Длина x Ширина x Высота (см)</label>
+    <input type="text" placeholder="50x50x50" value="" id="size" name="size">
+</div>
+            <div id="gruzSelected" class="lk-input-list lk-input-list-force-h">
+                <div class="lk-input">
+    <label for="weight">Вес</label>
+    <input type="text" placeholder="25" value="" id="weight" name="weight">
+</div>
+                <div class="lk-input">
+    <label for="mesta">Места</label>
+    <input type="text" placeholder="1" value="" id="mesta" name="mesta">
+</div>
+            </div>
+            <div id="docsSelected" class="lk-hidden lk-input-list lk-input-list-force-h">
+                <div class="lk-search-checkboxes">
+                    <div class="lk-input lk-input-check">
+                        <input type="checkbox" id="inProcess" name="inProcess" value="true">
+                        <label for="inProcess">Нужен конверт</label>
+                    </div>
+                    <div class="lk-input lk-input-check">
+                        <input type="checkbox" id="delivered" name="delivered" value="true">
+                        <label for="delivered">Нужен пакет</label>
+                    </div>
+                </div>
+            </div>
+            <div class="lk-input">
+                <label for="description">Описание</label>
+                <textarea type="text" id="description" name="description" style="height: 128px" placeholder="Описание"></textarea>
+            </div>
+            <a class="lk-buttton" href="calc-result.html">Расчитать</a>
+        </div>
+    </div>
+    <footer class="delexFooter">
+    <div class="footer-legal">
+        <div><img src="images/Logo%20(1).f5a33835.png"></div>
+        <div class="footer-list">
+            <a>Политика конфеденциальности</a>
+            <a>Пользовательское соглашение</a>
+        </div>
+        <div>
+            (с) 2016-2023 Все права защищены
+        </div>
+    </div>
+    <div class="footer-offers">
+        <h6>Услуги</h6>
+        <div class="footer-list">
+            <a href="order.html">Эксперсс-Доставка до 12:00</a>
+            <a>Доставка на следующий день</a>
+            <a href="track.html">Доставка с оплатой получателем</a>
+            <a href="online-shops.html">Доставка лично в руки</a>
+            <a href="online-ordering.html">Доставка в выходной день</a>
+        </div>
+    </div>
+    <div class="footer-about">
+        <h6>О компании</h6>
+        <div class="footer-list">
+            <a href="about.html">О компании</a>
+            <a>Наши преимущества</a>
+            <a href="quality_control.html">Отзывы</a>
+            <a>Документы</a>
+            <a>Контакты</a>
+        </div>
+    </div>
+</footer>
+    
+</body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> DelEx </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="style.3f9989af.css">
+<link rel="stylesheet" href="extra.c8befc40.css">
+    <link rel="stylesheet" href="lk.e780e130.css">
+    <style>.lk-nav-finance {
+  border-color: var(--color-accent);
+}
+
+</style>
+
+</head>
+
+<body>
+    <header>
+    <nav class="lk-nav">
+        <div class="lk-sidebar-open" id="sidebaropener">
+            <svg width="40" height="40" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="MenuIcon"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+        </div>
+        <div>
+            <img class="lk-logo" src="images/logo-lk.3331d819.png" alt="">
+        </div>
+        <div class="lk-nav-center">
+            <a class="lk-nav-senders" href="lk_senders.html">Отправители</a>
+            <a class="lk-nav-receivers" href="">Получатели</a>
+            <a class="lk-nav-finance" href="lk_finance.html">Финансы</a>
+            <a class="lk-nav-invoices" href="lk_invoices.html">Создать накладную</a>
+            <a class="lk-nav-departures" href="lk_departures.html">Отправления</a>
+            <a class="lk-nav-support" href="lk_support.html">Служба поддержки</a>
+            <a class="lk-nav-order-delivery" href="lk_order_delivery.html">Создать заказ на доставку</a>
+            <a class="lk-nav-calc" href="lk_calc.html">Калькулятор</a>
+        </div>
+        <div>
+            <div class="lk-dropdown" id="ddh">
+                <button class="lk-dropdown-button lk-user">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 60 60">
+  <g clip-path="url(#a)">
+    <g clip-path="url(#b)">
+      <path fill="#28D" fill-opacity=".06" d="M30 60c16.569 0 30-13.431 30-30C60 13.431 46.569 0 30 0 13.431 0 0 13.431 0 30c0 16.569 13.431 30 30 30Z"></path>
+      <path fill="#28D" d="M24.034 42h-5.273l8.035-23.273h6.34L41.16 42h-5.273l-5.83-17.954h-.181L24.035 42Zm-.33-9.148H36.16v3.841H23.705v-3.84Z"></path>
+    </g>
+  </g>
+  <defs>
+    <clipPath id="a">
+      <path fill="#fff" d="M0 0h60v60H0z"></path>
+    </clipPath>
+    <clipPath id="b">
+      <path fill="#fff" d="M0 0h60v60H0z"></path>
+    </clipPath>
+  </defs>
+</svg>
+</button>
+                <div class="lk-dropdown-options lk-hidden" id="ddho">
+                    <div>Здравствуйте, <b>ООО Астра</b></div>
+                    <hr>
+                    <div>Ваш баланс, <span class="lk-color-accent">25 000 руб.</span></div>
+                    <hr>
+                    <div class="lk-dropdown-links">
+                        <a class="lk-nav-profile" href="lk_index.html">Мой профиль</a>
+                        <a class="lk-nav-senders" href="lk_senders.html">Отправители</a>
+                        <a class="lk-nav-receivers" href="">Получатели</a>
+                        <a class="lk-nav-finance" href="lk_finance.html">Финансы</a>
+                        <a class="lk-nav-invoices" href="lk_invoices.html">Создать накладную</a>
+                        <a class="lk-nav-departures" href="lk_departures.html">Отправления</a>
+                        <a class="lk-nav-support" href="lk_support.html">Служба поддержки</a>
+                        <a class="lk-nav-order-delivery" href="lk_order_delivery.html">Создать заказ на доставку</a>
+                        <a class="lk-nav-calc" href="lk_calc.html">Калькулятор</a>
+                    </div>
+                    <hr>
+                    <a class="lk-color-dangerous">Выйти</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav id="sidebar" class="lk-sidebar">
+            <a class="lk-nav-profile" href="lk_index.html">Мой профиль</a>
+            <a class="lk-nav-senders" href="lk_senders.html">Отправители</a>
+            <a class="lk-nav-receivers" href="">Получатели</a>
+            <a class="lk-nav-finance" href="lk_finance.html">Финансы</a>
+            <a class="lk-nav-invoices" href="lk_invoices.html">Создать накладную</a>
+            <a class="lk-nav-departures" href="lk_departures.html">Отправления</a>
+            <a class="lk-nav-support" href="lk_support.html">Служба поддержки</a>
+            <a class="lk-nav-order-delivery" href="lk_order_delivery.html">Создать заказ на доставку</a>
+            <a class="lk-nav-calc" href="lk_calc.html">Калькулятор</a>
+            <a id="sidebarcloser">Закрыть</a>
+    </nav>
+</header>
+<script defer="">let sidebar = document.getElementById("sidebar");
+let dropdown = document.getElementById("ddh");
+let dropdowno = document.getElementById("ddho");
+let dropdownbtn = document.getElementById("sidebar");
+let sidebarOpener = document.getElementById("sidebaropener");
+let sidebarCloser = document.getElementById("sidebarcloser");
+console.log(sidebarOpener);
+function openCloseSidebar() {
+    sidebar.classList.toggle("lk-sidebar-visible");
+}
+function openCloseDropdown() {
+    dropdowno.classList.toggle("lk-hidden");
+}
+dropdown.addEventListener("click", (e)=>openCloseDropdown());
+sidebarOpener.addEventListener("click", (e)=>openCloseSidebar());
+sidebarCloser.addEventListener("click", (e)=>openCloseSidebar());
+
+</script>
+
+    <div class="lk-fullpage lk-background lk-flex">
+        <h1 class="lk-page-header">Финансы</h1>
+        <!--
+        <div class="lk-container lk-add-button lk-no-bg">
+            <img src="images/add.28776470.svg">
+            Запросить оригиналы финансовых документов
+        </div>
+        -->
+
+        <div class="lk-container lk-user-info">
+    <div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none" viewBox="0 0 60 60">
+  <g clip-path="url(#a)">
+    <g clip-path="url(#b)">
+      <path fill="#28D" fill-opacity=".06" d="M30 60c16.569 0 30-13.431 30-30C60 13.431 46.569 0 30 0 13.431 0 0 13.431 0 30c0 16.569 13.431 30 30 30Z"></path>
+      <path fill="#28D" d="M24.034 42h-5.273l8.035-23.273h6.34L41.16 42h-5.273l-5.83-17.954h-.181L24.035 42Zm-.33-9.148H36.16v3.841H23.705v-3.84Z"></path>
+    </g>
+  </g>
+  <defs>
+    <clipPath id="a">
+      <path fill="#fff" d="M0 0h60v60H0z"></path>
+    </clipPath>
+    <clipPath id="b">
+      <path fill="#fff" d="M0 0h60v60H0z"></path>
+    </clipPath>
+  </defs>
+</svg>
+</div>
+    <div>
+        Здравствуйте, <b>ООО Астра</b>
+    </div>
+    <div>
+        Ваш баланс: <b class="lk-user-balance">25 500 руб.</b> <!--возможно это стоит сделать <a></a>-->
+    </div>
+    <div>
+        <a class="lk-color-dangerous">Выход</a>
+    </div>
+</div>
+
+        <div class="lk-container lk-input-list lk-flex-center">
+            <h3 class="lk-header">Акт сверки</h3>
+            <div class="lk-input-list lk-input-list-force-h">
+                <div class="lk-input">
+                    <input type="date">
+                </div>
+
+                <div class="lk-input">
+                    <input type="date">
+                </div>
+
+                <div class="lk-input">
+                    <select name="company" id="company">
+                        <option value="astra">ООО Астра</option>
+                    </select>
+                </div>
+
+                <div class="lk-input">
+                    <button>Сформировать</button>
+                </div>
+            </div>
+        </div>
+
+        <div class = 'd-flex' style = 'gap: 30px;'>
+            <div class="lk-container lk-add-button lk-add-button-print w-50">
+                <img src="images/print-20.ff25448e.svg">
+                Печать акта
+            </div>
+
+            <div class="lk-container lk-add-button lk-add-button-print w-50" style = 'text-align: center;'>
+                <img src="images/add.28776470.svg">
+                Запросить оригиналы финансовых документов
+            </div>
+
+        </div>
+
+        <div class="lk-container">
+            <div class="lk-balance-info">
+                <div>
+                    <div class="lk-balance-info-header">Баланс на начало периода</div>
+                    <div class="lk-balance-info-value"><b>573 254</b> руб.</div>
+                </div>
+                <div>
+                    <div class="lk-balance-info-header">Баланс на конец периода</div>
+                    <div class="lk-balance-info-value"><b>25 500</b> руб.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lk-container lk-overflow lk-flex">
+            <table class="lk-table">
+                <tr>
+                    <th>Дата</th>
+                    <th>Документ</th>
+                    <th>Дебит</th>
+                    <th>Кредит</th>
+                    <th>Счет</th>
+                    <th>Акт</th>
+                    <th>Счет фактура</th>
+                </tr>
+                <tr>
+                    <td>18.08.23</td>
+                    <td>Продажа (С0000000368 от 18.08.2023)</td>
+                    <td>14116.1</td>
+                    <td>0</td>
+                    <td><a class="lk-table-print">Счет <img src="images/print-16.ef514a67.svg"></a></td>
+                    <td><a class="lk-table-print">Акт <img src="images/print-16.ef514a67.svg"></a></td>
+                    <td><a class="lk-table-print">Счет фактура <img src="images/print-16.ef514a67.svg"></a></td>
+                </tr>
+                <tr>
+                    <td>18.08.23</td>
+                    <td>Продажа (С0000000368 от 18.08.2023)</td>
+                    <td>14116.1</td>
+                    <td>0</td>
+                    <td><a class="lk-table-print">Счет <img src="images/print-16.ef514a67.svg"></a></td>
+                    <td><a class="lk-table-print">Акт <img src="images/print-16.ef514a67.svg"></a></td>
+                    <td><a class="lk-table-print">Счет фактура <img src="images/print-16.ef514a67.svg"></a></td>
+                </tr>
+                <tr>
+                    <td>18.08.23</td>
+                    <td>Продажа (С0000000368 от 18.08.2023)</td>
+                    <td>14116.1</td>
+                    <td>0</td>
+                    <td><a class="lk-table-print">Счет <img src="images/print-16.ef514a67.svg"></a></td>
+                    <td><a class="lk-table-print">Акт <img src="images/print-16.ef514a67.svg"></a></td>
+                    <td><a class="lk-table-print">Счет фактура <img src="images/print-16.ef514a67.svg"></a></td>
+                </tr>
+                <tr>
+                    <td>18.08.23</td>
+                    <td>Продажа (С0000000368 от 18.08.2023)</td>
+                    <td>14116.1</td>
+                    <td>0</td>
+                    <td><a class="lk-table-print">Счет <img src="images/print-16.ef514a67.svg"></a></td>
+                    <td><a class="lk-table-print">Акт <img src="images/print-16.ef514a67.svg"></a></td>
+                    <td><a class="lk-table-print">Счет фактура <img src="images/print-16.ef514a67.svg"></a></td>
+                </tr>
+                <tr>
+                    <td>18.08.23</td>
+                    <td>Продажа (С0000000368 от 18.08.2023)</td>
+                    <td>14116.1</td>
+                    <td>0</td>
+                    <td><a class="lk-table-print">Счет <img src="images/print-16.ef514a67.svg"></a></td>
+                    <td><a class="lk-table-print">Акт <img src="images/print-16.ef514a67.svg"></a></td>
+                    <td><a class="lk-table-print">Счет фактура <img src="images/print-16.ef514a67.svg"></a></td>
+                </tr>
+                <tr>
+                    <td>18.08.23</td>
+                    <td>Продажа (С0000000368 от 18.08.2023)</td>
+                    <td>14116.1</td>
+                    <td>0</td>
+                    <td><a class="lk-table-print">Счет <img src="images/print-16.ef514a67.svg"></a></td>
+                    <td><a class="lk-table-print">Акт <img src="images/print-16.ef514a67.svg"></a></td>
+                    <td><a class="lk-table-print">Счет фактура <img src="images/print-16.ef514a67.svg"></a></td>
+                </tr>
+                <tr>
+                    <td>18.08.23</td>
+                    <td>Продажа (С0000000368 от 18.08.2023)</td>
+                    <td>14116.1</td>
+                    <td>0</td>
+                    <td><a class="lk-table-print">Счет <img src="images/print-16.ef514a67.svg"></a></td>
+                    <td><a class="lk-table-print">Акт <img src="images/print-16.ef514a67.svg"></a></td>
+                    <td><a class="lk-table-print">Счет фактура <img src="images/print-16.ef514a67.svg"></a></td>
+                </tr>
+            </table>
+            <div class="lk-finance-info">
+               <!--
+                <div>
+                    <div class="lk-finance-info-header">Сальдо начальное (22.10.2022)</div>
+                    <div class="lk-finance-info-value"> 573254,4</div>
+                </div>
+                -->
+                <div>
+                    <div class="lk-finance-info-header">Обороты за период</div>
+                    <div class="lk-finance-info-value">
+                        <div>761710</div>
+                        <div>1318988</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="lk-finance-info-header">Сальдо конечное (22.10.2023)</div>
+                    <div class="lk-finance-info-value"> 25500,5</div>
+                </div>
+                
+                <br>
+                
+                <div>
+                    <div class="lk-finance-info-header">
+                        По данным ООО "Астра" <br>
+                        на 17.01.2024 задолженность в пользу ООО "Астра" <br>
+                        25500,5 руб.
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

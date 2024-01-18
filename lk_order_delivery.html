@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> DelEx </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="style.3f9989af.css">
+<link rel="stylesheet" href="extra.c8befc40.css">
+    <link rel="stylesheet" href="lk.e780e130.css">
+    <style>.lk-nav-order-delivery {
+  border-color: var(--color-accent);
+}
+
+</style>
+
+    <script>const collapse = (toCollapse)=>{
+    let e = document.querySelector(toCollapse);
+    //console.log('collapse log; display is: ', e);
+    e.classList.toggle("lk-hidden");
+//console.log(e);
+};
+
+</script>
+
+</head>
+
+<body>
+    <header>
+    <nav class="lk-nav">
+        <div class="lk-sidebar-open" id="sidebaropener">
+            <svg width="40" height="40" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="MenuIcon"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+        </div>
+        <div>
+            <img class="lk-logo" src="images/logo-lk.3331d819.png" alt="">
+        </div>
+        <div class="lk-nav-center">
+            <a class="lk-nav-senders" href="lk_senders.html">Отправители</a>
+            <a class="lk-nav-receivers" href="">Получатели</a>
+            <a class="lk-nav-finance" href="lk_finance.html">Финансы</a>
+            <a class="lk-nav-invoices" href="lk_invoices.html">Создать накладную</a>
+            <a class="lk-nav-departures" href="lk_departures.html">Отправления</a>
+            <a class="lk-nav-support" href="lk_support.html">Служба поддержки</a>
+            <a class="lk-nav-order-delivery" href="lk_order_delivery.html">Создать заказ на доставку</a>
+            <a class="lk-nav-calc" href="lk_calc.html">Калькулятор</a>
+        </div>
+        <div>
+            <div class="lk-dropdown" id="ddh">
+                <button class="lk-dropdown-button lk-user">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 60 60">
+  <g clip-path="url(#a)">
+    <g clip-path="url(#b)">
+      <path fill="#28D" fill-opacity=".06" d="M30 60c16.569 0 30-13.431 30-30C60 13.431 46.569 0 30 0 13.431 0 0 13.431 0 30c0 16.569 13.431 30 30 30Z"></path>
+      <path fill="#28D" d="M24.034 42h-5.273l8.035-23.273h6.34L41.16 42h-5.273l-5.83-17.954h-.181L24.035 42Zm-.33-9.148H36.16v3.841H23.705v-3.84Z"></path>
+    </g>
+  </g>
+  <defs>
+    <clipPath id="a">
+      <path fill="#fff" d="M0 0h60v60H0z"></path>
+    </clipPath>
+    <clipPath id="b">
+      <path fill="#fff" d="M0 0h60v60H0z"></path>
+    </clipPath>
+  </defs>
+</svg>
+</button>
+                <div class="lk-dropdown-options lk-hidden" id="ddho">
+                    <div>Здравствуйте, <b>ООО Астра</b></div>
+                    <hr>
+                    <div>Ваш баланс, <span class="lk-color-accent">25 000 руб.</span></div>
+                    <hr>
+                    <div class="lk-dropdown-links">
+                        <a class="lk-nav-profile" href="lk_index.html">Мой профиль</a>
+                        <a class="lk-nav-senders" href="lk_senders.html">Отправители</a>
+                        <a class="lk-nav-receivers" href="">Получатели</a>
+                        <a class="lk-nav-finance" href="lk_finance.html">Финансы</a>
+                        <a class="lk-nav-invoices" href="lk_invoices.html">Создать накладную</a>
+                        <a class="lk-nav-departures" href="lk_departures.html">Отправления</a>
+                        <a class="lk-nav-support" href="lk_support.html">Служба поддержки</a>
+                        <a class="lk-nav-order-delivery" href="lk_order_delivery.html">Создать заказ на доставку</a>
+                        <a class="lk-nav-calc" href="lk_calc.html">Калькулятор</a>
+                    </div>
+                    <hr>
+                    <a class="lk-color-dangerous">Выйти</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav id="sidebar" class="lk-sidebar">
+            <a class="lk-nav-profile" href="lk_index.html">Мой профиль</a>
+            <a class="lk-nav-senders" href="lk_senders.html">Отправители</a>
+            <a class="lk-nav-receivers" href="">Получатели</a>
+            <a class="lk-nav-finance" href="lk_finance.html">Финансы</a>
+            <a class="lk-nav-invoices" href="lk_invoices.html">Создать накладную</a>
+            <a class="lk-nav-departures" href="lk_departures.html">Отправления</a>
+            <a class="lk-nav-support" href="lk_support.html">Служба поддержки</a>
+            <a class="lk-nav-order-delivery" href="lk_order_delivery.html">Создать заказ на доставку</a>
+            <a class="lk-nav-calc" href="lk_calc.html">Калькулятор</a>
+            <a id="sidebarcloser">Закрыть</a>
+    </nav>
+</header>
+<script defer="">let sidebar = document.getElementById("sidebar");
+let dropdown = document.getElementById("ddh");
+let dropdowno = document.getElementById("ddho");
+let dropdownbtn = document.getElementById("sidebar");
+let sidebarOpener = document.getElementById("sidebaropener");
+let sidebarCloser = document.getElementById("sidebarcloser");
+console.log(sidebarOpener);
+function openCloseSidebar() {
+    sidebar.classList.toggle("lk-sidebar-visible");
+}
+function openCloseDropdown() {
+    dropdowno.classList.toggle("lk-hidden");
+}
+dropdown.addEventListener("click", (e)=>openCloseDropdown());
+sidebarOpener.addEventListener("click", (e)=>openCloseSidebar());
+sidebarCloser.addEventListener("click", (e)=>openCloseSidebar());
+
+</script>
+
+    <div class="lk-fullpage lk-background lk-flex">
+        <h1 class="lk-page-header">Заказать доставку</h1>
+        <div class="lk-container lk-add-button" onclick="collapse('#create')">
+            <img src="images/add.28776470.svg">
+            Создать заявку
+        </div>
+
+        <div id="create" class="lk-flex lk-hidden">
+            <div class="lk-flex lk-flex-h lk-flex-md-v">
+                <div class="lk-container lk-input-list" style="width: 100%">
+                    <h3 class="lk-header">Данные отправителя</h3>
+                    <div class="lk-input">
+    <label for="senderName">Отправитель</label>
+    <input type="text" placeholder="Выбрать отправителя" value="" id="senderName" name="senderName">
+</div>
+                    <div class="lk-input">
+    <label for="senderName">Наименование</label>
+    <input type="text" placeholder="Наименование отправителя" value="" id="senderName" name="senderName">
+</div>
+                    <div class="lk-input">
+    <label for="senderCity">Город</label>
+    <input type="text" placeholder="Выберете город" value="" id="senderCity" name="senderCity">
+</div>
+                    <div class="lk-input">
+    <label for="senderAddress">Адрес</label>
+    <input type="text" placeholder="Укажите адрес" value="" id="senderAddress" name="senderAddress">
+</div>
+                    <div class="lk-input">
+    <label for="senderContact">Контактное лицо</label>
+    <input type="text" placeholder="Фамилия / Имя / Отчество" value="" id="senderContact" name="senderContact">
+</div>
+                    <div class="lk-input">
+    <label for="senderPhone">Телефон</label>
+    <input type="text" placeholder="+7 (999) 999 99 99" value="" id="senderPhone" name="senderPhone">
+</div>
+                    <div class="lk-input">
+                        <label for="description">Комментарий</label>
+                        <textarea type="text" id="description" name="description" placeholder="Ваш комментарий..."></textarea>
+                    </div>
+                </div>
+                <div class="lk-container lk-input-list" style="width: 100%">
+                    <h3 class="lk-header">Данные получателя</h3>
+                    <div class="lk-input">
+    <label for="receiverName">Получатель</label>
+    <input type="text" placeholder="Выбрать получателя" value="" id="receiverName" name="receiverName">
+</div>
+                    <div class="lk-input">
+    <label for="receiverName">Наименование</label>
+    <input type="text" placeholder="Наименование получателя" value="" id="receiverName" name="receiverName">
+</div>
+                    <div class="lk-input">
+    <label for="receiverCity">Город</label>
+    <input type="text" placeholder="Выберете город" value="" id="receiverCity" name="receiverCity">
+</div>
+                    <div class="lk-input">
+    <label for="receiverAddress">Адрес</label>
+    <input type="text" placeholder="Укажите адрес" value="" id="receiverAddress" name="receiverAddress">
+</div>
+                    <div class="lk-input">
+    <label for="receiverContact">Контактное лицо</label>
+    <input type="text" placeholder="Фамилия / Имя / Отчество" value="" id="receiverContact" name="receiverContact">
+</div>
+                    <div class="lk-input">
+    <label for="receiverPhone">Телефон</label>
+    <input type="text" placeholder="+7 (999) 999 99 99" value="" id="receiverPhone" name="receiverPhone">
+</div>
+                    <div class="lk-input">
+                        <label for="receiverDescription">Комментарий</label>
+                        <textarea type="text" id="receiverDescription" name="receiverDescription" placeholder="Ваш комментарий..."></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="lk-container lk-input-list" style="width: 100%">
+                <h3 class="lk-header">Отправление</h3>
+                <div class="lk-input-list lk-input-list-force-h">
+                    <div class="lk-input">
+    <label for="weight">Вес, кг</label>
+    <input type="text" placeholder="0,2" value="" id="weight" name="weight">
+</div>
+                    <!--TODO: use combobox and date select instead-->
+                    <div class="lk-input">
+    <label for="date">Дата готовности заказа</label>
+    <input type="text" placeholder="23.10.2023" value="" id="date" name="date">
+</div>
+                    <div class="lk-input">
+    <label for="payer">Плательщик</label>
+    <input type="text" placeholder="Данные совпадают с данными" value="" id="payer" name="payer">
+</div>
+                </div>
+    
+                <div class="lk-input">
+                    <label for="description">Комментарий</label>
+                    <textarea type="text" id="description" name="description" rows = 5></textarea>
+                </div>
+            </div>
+            
+            <div class="lk-container lk-input-list" style="width: 100%">
+                <h3 class="lk-header">Комментарий к заказу</h3>
+                <div class="lk-input">
+                    <textarea type="text" id="description" name="description" rows = 5></textarea>
+                </div>
+            </div>
+            
+            <div class="lk-container lk-add-button" onclick="collapse('#create')">
+                Создать
+            </div>
+        </div>
+
+        <div class="lk-container lk-input-list lk-flex-center lk-quickfix-font-size-14">
+            <h3 class="lk-header">Список заявок</h3>
+
+            <div class="lk-overflow" style="width: 100%">
+                <div style="min-width: 768px">
+                    <div class="inv-row d-flex lk-quickfix-header-bold">
+                        <div class="col-2">
+                            ID
+                        </div>
+                        <div class="col-3">
+                            Отправитель
+                        </div>
+                        <div class="col-3">
+                            Получатель
+                        </div>
+                        <div class="col-2">
+                            Дата готовности
+                        </div>
+                        <div class="col-1">
+                        </div>
+                        <div class="col-1">
+                        </div>
+
+                    </div>
+
+                    <div class="inv-row">
+                        <div class='d-flex'>
+                            <div class="col-2">
+                                LK000062
+                            </div>
+                            <div class="col-3">
+                                ООО Моя компания
+                            </div>
+                            <div class="col-3">
+                                ООО Другая компания
+                            </div>
+                            <div class="col-2">
+                                22.10.2023
+                            </div>
+                            <div class="col-1">
+                                <a style="color: var(--default-blue); cursor: context-menu" onclick="collapse('#collapse1')">
+                                    Подробнее
+                                </a>
+                            </div>
+                            <div class="col-1" style="padding-left: 2rem">
+                                <a style="color: #ff4343; cursor: context-menu">
+                                    Удалить
+                                </a>
+                            </div>
+
+                        </div>
+                        
+                        <div>
+                            <div class="lk-quickfix-flex-column" id="collapse1">
+                                <br>
+                                <div class="d-flex w-100">
+                                    <div class="card col-6 m-default" style="background-color: #f8f8f8">
+                                        <h3>
+                                            Отправитель
+                                        </h3>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Наименование
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                ООО Моя Компания
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Контактное лицо
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                Директор
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Номер телефона
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                +7 (999) 111 22 33
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Город
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                Уфа
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Адрес
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                Ленина 5
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Комментарий
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                Комментарий
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card col-6 m-default" style="background-color: #f8f8f8">
+                                        <h3>
+                                            Получатель
+                                        </h3>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Наименование
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                ООО Моя Компания
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Контактное лицо
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                Директор
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Номер телефона
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                +7 (999) 111 22 33
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Город
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                Уфа
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Адрес
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                Ленина 5
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Комментарий
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                Комментарий
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <br>
+
+                                <div class="d-flex w-100">
+                                    <div class="card col-6 m-default" style="background-color: #f8f8f8">
+                                        <h3>
+                                            Отправитель
+                                        </h3>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Тип груза
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                груз
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Количество мест
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                1
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Вес, кг
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                25
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Габариты (длина х ширина х высота)
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                50 х 50 х 50
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Объёмный вес, кг
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                25
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Комментарий
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                Комментарий
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card col-6 m-default" style="background-color: #f8f8f8">
+                                        <h3>
+                                            Статусы
+                                        </h3>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Наименование
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                ООО Моя Компания
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                22.10.2023 Пермь
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                Принято от отправителя
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                20.10.2023 Пермь
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                Отправлена в региональное представительство
+                                            </p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class='w-100 d-flex'>
+                                    <div class="card col-12 m-default" style="background-color: #f8f8f8">
+                                        <h3>
+                                            Комментарий к заказу
+                                        </h3>
+                                        <p>
+                                            Комментарий
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    
+                    <div class="inv-row">
+                        <div class='d-flex'>
+                            <div class="col-2">
+                                LK000062
+                            </div>
+                            <div class="col-3">
+                                ООО Моя компания
+                            </div>
+                            <div class="col-3">
+                                ООО Другая компания
+                            </div>
+                            <div class="col-2">
+                                22.10.2023
+                            </div>
+                            <div class="col-1">
+                                <a style="color: var(--default-blue); cursor: context-menu" onclick="collapse('#collapse3')">
+                                    Подробнее
+                                </a>
+                            </div>
+                            <div class="col-1" style="padding-left: 2rem">
+                                <a style="color: #ff4343; cursor: context-menu">
+                                    Удалить
+                                </a>
+                            </div>
+
+                        </div>
+                        
+                        <div>
+                            <div class="lk-quickfix-flex-column lk-hidden" id="collapse3">
+                                <br>
+                                <div class="d-flex w-100">
+                                    <div class="card col-6 m-default" style="background-color: #f8f8f8">
+                                        <h3>
+                                            Отправитель
+                                        </h3>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Наименование
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                ООО Моя Компания
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Контактное лицо
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                Директор
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Номер телефона
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                +7 (999) 111 22 33
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Город
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                Уфа
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Адрес
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                Ленина 5
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Комментарий
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                Комментарий
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card col-6 m-default" style="background-color: #f8f8f8">
+                                        <h3>
+                                            Получатель
+                                        </h3>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Наименование
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                ООО Моя Компания
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Контактное лицо
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                Директор
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Номер телефона
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                +7 (999) 111 22 33
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Город
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                Уфа
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Адрес
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                Ленина 5
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Комментарий
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                Комментарий
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <br>
+
+                                <div class="d-flex w-100">
+                                    <div class="card col-6 m-default" style="background-color: #f8f8f8">
+                                        <h3>
+                                            Отправитель
+                                        </h3>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Тип груза
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                груз
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Количество мест
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                1
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Вес, кг
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                25
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Габариты (длина х ширина х высота)
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                50 х 50 х 50
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Объёмный вес, кг
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                25
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Комментарий
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                Комментарий
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card col-6 m-default" style="background-color: #f8f8f8">
+                                        <h3>
+                                            Статусы
+                                        </h3>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Наименование
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                ООО Моя Компания
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                22.10.2023 Пермь
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                Принято от отправителя
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                20.10.2023 Пермь
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                Отправлена в региональное представительство
+                                            </p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class='w-100 d-flex'>
+                                    <div class="card col-12 m-default" style="background-color: #f8f8f8">
+                                        <h3>
+                                            Комментарий к заказу
+                                        </h3>
+                                        <p>
+                                            Комментарий
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="inv-row">
+                        <div class='d-flex'>
+                            <div class="col-2">
+                                LK000062
+                            </div>
+                            <div class="col-3">
+                                ООО Моя компания
+                            </div>
+                            <div class="col-3">
+                                ООО Другая компания
+                            </div>
+                            <div class="col-2">
+                                22.10.2023
+                            </div>
+                            <div class="col-1">
+                                <a style="color: var(--default-blue); cursor: context-menu" onclick="collapse('#collapse2')">
+                                    Подробнее
+                                </a>
+                            </div>
+                            <div class="col-1" style="padding-left: 2rem">
+                                <a style="color: #ff4343; cursor: context-menu">
+                                    Удалить
+                                </a>
+                            </div>
+
+                        </div>
+                        
+                        <div>
+                            <div class="lk-quickfix-flex-column lk-hidden" id="collapse2">
+                                <br>
+                                <div class="d-flex w-100">
+                                    <div class="card col-6 m-default" style="background-color: #f8f8f8">
+                                        <h3>
+                                            Отправитель
+                                        </h3>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Наименование
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                ООО Моя Компания
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Контактное лицо
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                Директор
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Номер телефона
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                +7 (999) 111 22 33
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Город
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                Уфа
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Адрес
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                Ленина 5
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Комментарий
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                Комментарий
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card col-6 m-default" style="background-color: #f8f8f8">
+                                        <h3>
+                                            Получатель
+                                        </h3>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Наименование
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                ООО Моя Компания
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Контактное лицо
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                Директор
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Номер телефона
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                +7 (999) 111 22 33
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Город
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                Уфа
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Адрес
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                Ленина 5
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Комментарий
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                Комментарий
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <br>
+
+                                <div class="d-flex w-100">
+                                    <div class="card col-6 m-default" style="background-color: #f8f8f8">
+                                        <h3>
+                                            Отправитель
+                                        </h3>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Тип груза
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                груз
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Количество мест
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                1
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Вес, кг
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                25
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Габариты (длина х ширина х высота)
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                50 х 50 х 50
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Объёмный вес, кг
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                25
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Комментарий
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                Комментарий
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card col-6 m-default" style="background-color: #f8f8f8">
+                                        <h3>
+                                            Статусы
+                                        </h3>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                Наименование
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                ООО Моя Компания
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                22.10.2023 Пермь
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                Принято от отправителя
+                                            </p>
+                                        </div>
+                                        <div class="can-float" style="border-bottom: 1px solid #dcdcdc">
+                                            <p>
+                                                20.10.2023 Пермь
+                                            </p>
+                                            <p style="float: right; max-width: 50%; text-align: right;">
+                                                Отправлена в региональное представительство
+                                            </p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class='w-100 d-flex'>
+                                    <div class="card col-12 m-default" style="background-color: #f8f8f8">
+                                        <h3>
+                                            Комментарий к заказу
+                                        </h3>
+                                        <p>
+                                            Комментарий
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

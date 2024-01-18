@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> DelEx </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="style.3f9989af.css">
+<link rel="stylesheet" href="extra.c8befc40.css">
+    <link rel="stylesheet" href="lk.e780e130.css">
+    <style>.lk-nav-invoices {
+  border-color: var(--color-accent);
+}
+
+</style>
+</head>
+
+<body>
+    <header>
+    <nav class="lk-nav">
+        <div class="lk-sidebar-open" id="sidebaropener">
+            <svg width="40" height="40" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="MenuIcon"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+        </div>
+        <div>
+            <img class="lk-logo" src="images/logo-lk.3331d819.png" alt="">
+        </div>
+        <div class="lk-nav-center">
+            <a class="lk-nav-senders" href="lk_senders.html">Отправители</a>
+            <a class="lk-nav-receivers" href="">Получатели</a>
+            <a class="lk-nav-finance" href="lk_finance.html">Финансы</a>
+            <a class="lk-nav-invoices" href="lk_invoices.html">Создать накладную</a>
+            <a class="lk-nav-departures" href="lk_departures.html">Отправления</a>
+            <a class="lk-nav-support" href="lk_support.html">Служба поддержки</a>
+            <a class="lk-nav-order-delivery" href="lk_order_delivery.html">Создать заказ на доставку</a>
+            <a class="lk-nav-calc" href="lk_calc.html">Калькулятор</a>
+        </div>
+        <div>
+            <div class="lk-dropdown" id="ddh">
+                <button class="lk-dropdown-button lk-user">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 60 60">
+  <g clip-path="url(#a)">
+    <g clip-path="url(#b)">
+      <path fill="#28D" fill-opacity=".06" d="M30 60c16.569 0 30-13.431 30-30C60 13.431 46.569 0 30 0 13.431 0 0 13.431 0 30c0 16.569 13.431 30 30 30Z"></path>
+      <path fill="#28D" d="M24.034 42h-5.273l8.035-23.273h6.34L41.16 42h-5.273l-5.83-17.954h-.181L24.035 42Zm-.33-9.148H36.16v3.841H23.705v-3.84Z"></path>
+    </g>
+  </g>
+  <defs>
+    <clipPath id="a">
+      <path fill="#fff" d="M0 0h60v60H0z"></path>
+    </clipPath>
+    <clipPath id="b">
+      <path fill="#fff" d="M0 0h60v60H0z"></path>
+    </clipPath>
+  </defs>
+</svg>
+</button>
+                <div class="lk-dropdown-options lk-hidden" id="ddho">
+                    <div>Здравствуйте, <b>ООО Астра</b></div>
+                    <hr>
+                    <div>Ваш баланс, <span class="lk-color-accent">25 000 руб.</span></div>
+                    <hr>
+                    <div class="lk-dropdown-links">
+                        <a class="lk-nav-profile" href="lk_index.html">Мой профиль</a>
+                        <a class="lk-nav-senders" href="lk_senders.html">Отправители</a>
+                        <a class="lk-nav-receivers" href="">Получатели</a>
+                        <a class="lk-nav-finance" href="lk_finance.html">Финансы</a>
+                        <a class="lk-nav-invoices" href="lk_invoices.html">Создать накладную</a>
+                        <a class="lk-nav-departures" href="lk_departures.html">Отправления</a>
+                        <a class="lk-nav-support" href="lk_support.html">Служба поддержки</a>
+                        <a class="lk-nav-order-delivery" href="lk_order_delivery.html">Создать заказ на доставку</a>
+                        <a class="lk-nav-calc" href="lk_calc.html">Калькулятор</a>
+                    </div>
+                    <hr>
+                    <a class="lk-color-dangerous">Выйти</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav id="sidebar" class="lk-sidebar">
+            <a class="lk-nav-profile" href="lk_index.html">Мой профиль</a>
+            <a class="lk-nav-senders" href="lk_senders.html">Отправители</a>
+            <a class="lk-nav-receivers" href="">Получатели</a>
+            <a class="lk-nav-finance" href="lk_finance.html">Финансы</a>
+            <a class="lk-nav-invoices" href="lk_invoices.html">Создать накладную</a>
+            <a class="lk-nav-departures" href="lk_departures.html">Отправления</a>
+            <a class="lk-nav-support" href="lk_support.html">Служба поддержки</a>
+            <a class="lk-nav-order-delivery" href="lk_order_delivery.html">Создать заказ на доставку</a>
+            <a class="lk-nav-calc" href="lk_calc.html">Калькулятор</a>
+            <a id="sidebarcloser">Закрыть</a>
+    </nav>
+</header>
+<script defer="">let sidebar = document.getElementById("sidebar");
+let dropdown = document.getElementById("ddh");
+let dropdowno = document.getElementById("ddho");
+let dropdownbtn = document.getElementById("sidebar");
+let sidebarOpener = document.getElementById("sidebaropener");
+let sidebarCloser = document.getElementById("sidebarcloser");
+console.log(sidebarOpener);
+function openCloseSidebar() {
+    sidebar.classList.toggle("lk-sidebar-visible");
+}
+function openCloseDropdown() {
+    dropdowno.classList.toggle("lk-hidden");
+}
+dropdown.addEventListener("click", (e)=>openCloseDropdown());
+sidebarOpener.addEventListener("click", (e)=>openCloseSidebar());
+sidebarCloser.addEventListener("click", (e)=>openCloseSidebar());
+
+</script>
+    <div class="lk-fullpage lk-background lk-flex">
+
+        <div id="create" class="lk-flex">
+            <h1 class="lk-page-header">Накладные</h1>
+            <div class="lk-flex lk-flex-h lk-flex-md-v ">
+                <div class="lk-container lk-input-list" style="width: 100%">
+                    <h3 class="lk-header">Данные отправителя</h3>
+                    <div class="lk-input">
+    <label for="senderName">Отправитель</label>
+    <input type="text" placeholder="Выбрать отправителя" value="" id="senderName" name="senderName">
+</div>
+                    <div class="lk-input">
+    <label for="senderName">Наименование</label>
+    <input type="text" placeholder="Наименование отправителя" value="" id="senderName" name="senderName">
+</div>
+                    <div class="lk-input">
+    <label for="senderCity">Город</label>
+    <input type="text" placeholder="Выберете город" value="" id="senderCity" name="senderCity">
+</div>
+                    <div class="lk-input">
+    <label for="senderAddress">Адрес</label>
+    <input type="text" placeholder="Укажите адрес" value="" id="senderAddress" name="senderAddress">
+</div>
+                    <div class="lk-input">
+    <label for="senderContact">Контактное лицо</label>
+    <input type="text" placeholder="Фамилия / Имя / Отчество" value="" id="senderContact" name="senderContact">
+</div>
+                    <div class="lk-input">
+    <label for="senderPhone">Телефон</label>
+    <input type="text" placeholder="+7 (999) 999 99 99" value="" id="senderPhone" name="senderPhone">
+</div>
+                </div>
+                <div class="lk-container lk-input-list" style="width: 100%">
+                    <h3 class="lk-header">Данные получателя</h3>
+                    <div class="lk-input">
+    <label for="receiverName">Получатель</label>
+    <input type="text" placeholder="Выбрать получателя" value="" id="receiverName" name="receiverName">
+</div>
+                    <div class="lk-input">
+    <label for="receiverName">Наименование</label>
+    <input type="text" placeholder="Наименование получателя" value="" id="receiverName" name="receiverName">
+</div>
+                    <div class="lk-input">
+    <label for="receiverCity">Город</label>
+    <input type="text" placeholder="Выберете город" value="" id="receiverCity" name="receiverCity">
+</div>
+                    <div class="lk-input">
+    <label for="receiverAddress">Адрес</label>
+    <input type="text" placeholder="Укажите адрес" value="" id="receiverAddress" name="receiverAddress">
+</div>
+                    <div class="lk-input">
+    <label for="receiverContact">Контактное лицо</label>
+    <input type="text" placeholder="Фамилия / Имя / Отчество" value="" id="receiverContact" name="receiverContact">
+</div>
+                    <div class="lk-input">
+    <label for="receiverPhone">Телефон</label>
+    <input type="text" placeholder="+7 (999) 999 99 99" value="" id="receiverPhone" name="receiverPhone">
+</div>
+                </div>
+            </div>
+            <div class="lk-flex lk-flex-h lk-flex-md-v ">
+                <div class="lk-container lk-input-list" style="width: 100%">
+                    <h3 class="lk-header">Основные данные</h3>
+                    <div class="lk-input">
+    <label for="paymentMethod">Безналичный расчет</label>
+    <input type="text" placeholder="Безналичный расчет" value="" id="paymentMethod" name="paymentMethod">
+</div>
+                    <div class="lk-input">
+    <label for="deliveryType">Класс</label>
+    <input type="text" placeholder="Эконом" value="" id="deliveryType" name="deliveryType">
+</div>
+                    <div class="lk-input">
+    <label for="paymentType">Тип оплаты</label>
+    <input type="text" placeholder="Отплата отправителем" value="" id="paymentType" name="paymentType">
+</div>
+                    <div class="lk-input" style="align-self: stretch; height: 100%">
+                        <label for="description">Комментарий</label>
+                        <textarea type="text" id="description" name="description" placeholder="Ваш комментарий..." style="resize: none; height: 100%"></textarea>
+                    </div>
+                </div>
+                <div class="lk-container lk-input-list" style="width: 100%">
+                    <h3 class="lk-header">Отправление</h3>
+                    <div class="lk-input">
+    <label for="packageType">Тип груза</label>
+    <input type="text" placeholder="Груз" value="" id="packageType" name="packageType">
+</div>
+                    <div class="lk-input">
+    <label for="count">Количество мест</label>
+    <input type="text" placeholder="" value="" id="count" name="count">
+</div>
+                    <div class="lk-input">
+    <label for="weight">Вес, кг</label>
+    <input type="text" placeholder="" value="" id="weight" name="weight">
+</div>
+                    <div class="lk-input">
+    <label for="receiverAddress">Габариты</label>
+    <input type="text" placeholder="50x50x50" value="" id="receiverAddress" name="receiverAddress">
+</div> <!--TODO: потом, там можно lk-input-list юзать даж наверн-->
+                    <div class="lk-input">
+    <label for="receiverContact">Объемный вес</label>
+    <input type="text" placeholder="" value="" id="receiverContact" name="receiverContact">
+</div>
+                </div>
+            </div>
+            <div class="lk-container lk-input-list lk-flex-center" style="width: 100%">
+                <h3 class="lk-header">Дополнительные услуги</h3>
+                <div class="lk-two-row-adaptive">
+                    <div class="lk-input-list"><!--TODO: переделать в форму? idk-->
+                        <div class="lk-input lk-input-check">
+                            <input type="checkbox" value="true" id="anotherCity" name="anotherCity">
+                            <label for="anotherCity">Доставка из другого города</label>
+                        </div>
+                        <div class="lk-input lk-input-check">
+                            <input type="checkbox" value="true" id="anotherCity" name="anotherCity">
+                            <label for="anotherCity">Оплата получателем по согласованию с менеджером</label>
+                        </div>
+                        <div class="lk-input lk-input-check">
+                            <input type="checkbox" value="true" id="anotherCity" name="anotherCity">
+                            <label for="anotherCity">Доставка груза к указанному времени или указанному дню</label>
+                        </div>
+                        <div class="lk-input lk-input-check">
+                            <input type="checkbox" value="true" id="anotherCity" name="anotherCity">
+                            <label for="anotherCity">Доставка на следующий день по договоренности</label>
+                        </div>
+                        <div class="lk-input lk-input-check">
+                            <input type="checkbox" value="true" id="anotherCity" name="anotherCity">
+                            <label for="anotherCity">Доставка груза в нерабочее время или выходной день</label>
+                        </div>
+                        <div class="lk-input lk-input-check">
+                            <input type="checkbox" value="true" id="anotherCity" name="anotherCity">
+                            <label for="anotherCity">Доставка лично получателю</label>
+                        </div>
+                        <div class="lk-input lk-input-check">
+                            <input type="checkbox" value="true" id="anotherCity" name="anotherCity">
+                            <label for="anotherCity">Срочный вызов курьера</label>
+                        </div>
+                        <div class="lk-input lk-input-check">
+                            <input type="checkbox" value="true" id="anotherCity" name="anotherCity">
+                            <label for="anotherCity">Хранение отправления на складе</label>
+                        </div>
+                    </div>
+                    <div class="lk-input-list">
+                        <div class="lk-input lk-input-check">
+                            <input type="checkbox" value="true" id="anotherCity" name="anotherCity">
+                            <label for="anotherCity">Предоставления отсканированной копии перевозочной накладной</label>
+                        </div>
+                        <div class="lk-input lk-input-check">
+                            <input type="checkbox" value="true" id="anotherCity" name="anotherCity">
+                            <label for="anotherCity">Сбор груза из отдаленных районов</label>
+                        </div>
+                        <div class="lk-input lk-input-check">
+                            <input type="checkbox" value="true" id="anotherCity" name="anotherCity">
+                            <label for="anotherCity">Повторная доставка не по вине исполнителя</label>
+                        </div>
+                        <div class="lk-input lk-input-check">
+                            <input type="checkbox" value="true" id="anotherCity" name="anotherCity">
+                            <label for="anotherCity">Доставка на следующий рабочий день до 12:00</label>
+                        </div>
+                        <div class="lk-input lk-input-check">
+                            <input type="checkbox" value="true" id="anotherCity" name="anotherCity">
+                            <label for="anotherCity">Одно место более 50 кг</label>
+                        </div>
+                        <div class="lk-input lk-input-check">
+                            <input type="checkbox" value="true" id="anotherCity" name="anotherCity">
+                            <label for="anotherCity">Ожидание курьера более 10 минут</label>
+                        </div>
+                        <button class="lk-buttton" style="font-size: 14px; font-weight: 400">Возврат документов, сопровождающих груз</button>
+                    </div>
+            </div>
+            </div>
+            <div class="lk-container lk-add-button">
+                Создать
+            </div>
+        </div>
+</div></body></html>
