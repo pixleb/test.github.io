@@ -178,6 +178,7 @@
         <!-- Генерируем блоки информации для каждой локации -->
         {% for location in locations %}
         <h3 class="text-center" id="{{ location.locationID }}" style="margin-top:1em; border-bottom: 3px solid;">{{ location.locationName }}</h3>
+            <p id = 'debug'></p>
             <table class="table table-hover" id = 'resizable_table'>
                 <thead>
                     <tr>
@@ -225,6 +226,9 @@
             // быстрый фикс уплывания таблицы вправо
             let table_x_float = table.getBoundingClientRect().left;
             table.style = `transform: scale(${scale}); -webkit-transform: scale(${scale}); position: relative; left: -${table_x_float}px`;
+        
+            let pdebug = document.querySelector('#debug');
+            pdebug.innerHTML = `width: ${view_width}, table width: ${table_width}, scale: ${scale}`;
         </script>
         {% endfor %}
     </div>
