@@ -223,7 +223,7 @@
 
             let viewportScale = screenWidth / view_width
 
-            let scale = view_width/table_width-0.045
+            let scale = (view_width/table_width-0.045)*viewportScale;
 
             table.style = `transform: scale(${scale}); -webkit-transform: scale(${scale});`;
 
