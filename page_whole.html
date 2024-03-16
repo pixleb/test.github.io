@@ -178,8 +178,6 @@
         <!-- Генерируем блоки информации для каждой локации -->
         {% for location in locations %}
         <h3 class="text-center" id="{{ location.locationID }}" style="margin-top:1em; border-bottom: 3px solid;">{{ location.locationName }}</h3>
-        <p>
-            <div id = 'table_container'>
             <table class="table table-hover" id = 'resizable_table'>
                 <thead>
                     <tr>
@@ -195,7 +193,7 @@
                 </thead>
                 <tbody>
                     <!-- Генерируем строки таблицы для каждого терминала с информацией -->
-                    {% for terminal_info in location.terminalsinfo_set.all %}
+                    <!-- {% for terminal_info in location.terminalsinfo_set.all %} -->
                     <tr>
                         <td>
 
@@ -210,19 +208,23 @@
                         <td>51 минуту назад</td>
                         <td>30.05.2023</td>
                     </tr>
-                    {% endfor %}
+                    <!-- {% endfor %} -->
                 </tbody>
-            </table>
-        </div>
-        </p>
+            </table> 
         <script>
+            // код довольно топорный, однако работает, и вполне адекватно
+
             let table = document.querySelector('#resizable_table');
-            let container = document.querySelector('#table_container');
             let table_width = table.getBoundingClientRect().width;
             let view_width = window.innerWidth;
+            
+            let scale = view_width/table_width-0.045
 
-            container.style = `transform: scale(${view_width/table_width});`;
-            console.log(table_width);
+            table.style = `transform: scale(${scale});`;
+
+            // быстрый фикс уплывания таблицы вправо
+            let table_x_float = table.getBoundingClientRect().left;
+            table.style = `transform: scale(${scale}); position: relative; left: -${table_x_float}px`;
         </script>
         {% endfor %}
     </div>
