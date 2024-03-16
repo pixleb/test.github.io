@@ -219,6 +219,9 @@
             let table_width = table.getBoundingClientRect().width;
             // let view_width = window.innerWidth;
             let view_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+            let screenWidth = window.screen.width;
+
+            let viewportScale = screenWidth / view_width
 
             let scale = view_width/table_width-0.045
 
@@ -229,7 +232,7 @@
             table.style = `transform: scale(${scale}); -webkit-transform: scale(${scale}); position: relative; left: -${table_x_float}px`;
         
             let pdebug = document.querySelector('#debug');
-            pdebug.innerHTML = `width: ${view_width}, table width: ${table_width}, scale: ${scale}`;
+            pdebug.innerHTML = `width: ${view_width}, table width: ${table_width}, scale: ${scale}, viewport scale: ${viewportScale}`;
         </script>
         {% endfor %}
     </div>
