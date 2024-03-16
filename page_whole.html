@@ -217,8 +217,9 @@
 
             let table = document.querySelector('#resizable_table');
             let table_width = table.getBoundingClientRect().width;
-            let view_width = window.innerWidth;
-            
+            // let view_width = window.innerWidth;
+            let view_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+
             let scale = view_width/table_width-0.045
 
             table.style = `transform: scale(${scale}); -webkit-transform: scale(${scale});`;
