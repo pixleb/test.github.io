@@ -220,11 +220,11 @@
             
             let scale = view_width/table_width-0.045
 
-            table.style = `transform: scale(${scale});`;
+            table.style = `transform: scale(${scale}); -webkit-transform: scale(${scale});`;
 
             // быстрый фикс уплывания таблицы вправо
             let table_x_float = table.getBoundingClientRect().left;
-            table.style = `transform: scale(${scale}); position: relative; left: -${table_x_float}px`;
+            table.style = `transform: scale(${scale}); -webkit-transform: scale(${scale}); position: relative; left: -${table_x_float}px`;
         </script>
         {% endfor %}
     </div>
